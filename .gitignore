@@ -5,8 +5,6 @@ tests/__pycache__
 
 *.pyc
 
-*/__init__.py
-
 instance/
 
 .pytest_cache/
