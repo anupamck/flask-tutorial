@@ -17,9 +17,9 @@ def register():
         error = None
 
         if not username:
-            error = 'Username is required'
+            error = 'Username is required.'
         elif not password:
-            error = 'Password is required'
+            error = 'Password is required.'
 
         if error is None:
             try:
@@ -77,7 +77,7 @@ def logout():
     session.clear()
     return redirect(url_for('index'))
 
-def login_requried(view):
+def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
         if g.user is None:
